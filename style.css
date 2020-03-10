@@ -1,0 +1,49 @@
+*{
+  box-sizing: border-box;
+  border: 1px solid black;
+}
+
+body,html{
+  padding: 0px;
+  margin: 0px;
+  background-color: black;
+}
+
+
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+}
+
+h1{
+  font-size: 46px;
+  font-family: 'Courier Prime', monospace;
+  color:white;
+  padding-top:40vh;
+  padding-left: 20vw;
+}
+
+.background{
+  display:flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.row{
+  display: flex;
+  height: 33vh;
+
+}
+
+.cell{
+  width:33vw;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+.cell img{
+  fit: cover;
+  opacity: 50%;
+}
