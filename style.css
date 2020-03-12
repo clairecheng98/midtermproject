@@ -1,12 +1,11 @@
 *{
   box-sizing: border-box;
-  border: 1px solid black;
 }
 
 body,html{
   padding: 0px;
   margin: 0px;
-  background-color: black;
+
 }
 
 
@@ -15,6 +14,7 @@ body,html{
   align-items: center;
   justify-content: center;
   position: absolute;
+  z-index: 1;
 }
 
 h1{
@@ -22,28 +22,177 @@ h1{
   font-family: 'Courier Prime', monospace;
   color:white;
   padding-top:40vh;
-  padding-left: 20vw;
+  padding-left: 17vw;
+  opacity: 100;
 }
 
 .background{
   display:flex;
-  flex-direction: column;
-  justify-content: space-around;
-}
+  flex-direction: column;}
 
 .row{
   display: flex;
-  height: 33vh;
-
+  height: 33.333vh;
 }
 
 .cell{
-  width:33vw;
+  width:33.333vw;
   overflow: hidden;
   object-fit: cover;
 }
 
 .cell img{
   fit: cover;
+  filter: opacity(70%);}
+
+
+.arrow{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  padding-top: 63vh;
+  padding-left: 10vw;
+}
+
+.arrow img{
+  height: 10vh;
+  filter: invert(100);
+}
+
+.mainContainer{
+  background-color: black;
+  display: flex;
+}
+
+
+.background{
+  width:100vw;
+  height:100vh;
+}
+
+.textContainer{
+    background: rgba(0,0,0,0.5);
+    position: absolute;
+    z-index: 1;
+    margin-left: 10vw;
+    margin-top: 10vh;
+    padding-bottom:7vh;
+    border-radius: 20px;
+    border: 5px solid white;
+
+}
+
+.textContainer p{
+  font-size: 26px;
+  font-family: 'Courier Prime', monospace;
+  color:white;
+  padding-left: 5vh;
+  padding-right: 3vw;
+}
+
+
+.arrow2{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    padding-top: 85vh;
+    padding-left: 85vw;
+    z-index: 1;
+  }
+
+.arrowB{
+  height: 10vh;
+  filter: invert(100);
+  transform: rotate(180deg);
+  opacity:50%;
+}
+
+.arrowB:hover{
+  opacity: 100%;
+}
+
+.stamp img{
+  filter:invert(100);
+  position: absolute;
+  padding-left: 80vw;
+  padding-top: 5vh;
+  height:25vh;
+  z-index: 1;
   opacity: 50%;
+}
+
+.stamp img:hover{
+  opacity: 100%;
+}
+
+.letter img{
+  filter:invert(100);
+  position: absolute;
+  margin-left: 83vw;
+  height:30vh;
+  z-index: 1;
+  opacity: 50%;
+}
+
+.letter img:hover{
+  opacity: 100%;
+}
+
+.textContainer2{
+    background: rgba(0,0,0,0.5);
+    position: absolute;
+    z-index: 1;
+    margin-left: 5vw;
+    margin-top: 10vh;
+    padding-bottom:7vh;
+    border-radius: 20px;
+    border: 5px solid white;
+    width: 70vw;
+
+}
+
+.textContainer2 p{
+  font-size: 20px;
+  font-family: 'Courier Prime', monospace;
+  color:white;
+  padding-left: 5vh;
+  padding-right: 3vw;
+}
+
+.Messageinput{
+  background: rgba(0,0,0,0.5);
+  position: absolute;
+  z-index: 1;
+  margin-left: 5vw;
+  margin-top: 10vh;
+  padding-bottom:7vh;
+  border-radius: 20px;
+  border: 5px solid white;
+  width: 70vw;
+}
+
+textarea{
+  margin-left: 5vw;
+  background: rgba(0,0,0,0.5);
+  font-size: 20px;
+  font-family: 'Courier Prime', monospace;
+  color:white;
+}
+
+form {
+  margin-left: 5vw;
+  font-size: 20px;
+  font-family: 'Courier Prime', monospace;
+  color:white;
+  margin-bottom: 5vh;
+  margin-top: 5vh;
+}
+
+input{
+  font-size: 20px;
+  font-family: 'Courier Prime', monospace;
+  color:white;
+  background: rgba(0,0,0,0.5);
 }
