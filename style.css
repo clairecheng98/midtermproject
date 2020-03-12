@@ -116,7 +116,7 @@ h1{
 .stamp img{
   filter:invert(100);
   position: absolute;
-  padding-left: 80vw;
+  margin-left: 80vw;
   padding-top: 5vh;
   height:25vh;
   z-index: 1;
